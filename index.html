@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>API Météo</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" media="screen" href="./lib/main.css" />
+        <script src="./lib/main.js"></script>
+        <!-- Bootstrap -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    </head>
+    <body>
+        <div class="container">
+            <!-- navBar -->
+            <nav class="navbar fixed-top navbar-dark bg-dark">
+                <div class="container">
+                    <span class="navbar-brand mb-0 h1 ">API Météo</span>
+                </div>
+            </nav>
+
+            <!-- Search-->
+            <form style="padding-top:75px">
+                <div class="form-group row">
+                    <label for="ville" class="col-auto col-form-label">Ville</label>
+                    <div class="col-auto">
+                        <input class="form-control" id="ville" placeholder="Ville...">
+                    </div>
+                    <div class="col-auto">
+                        <button type="submit" class="btn btn-dark">Rechercher</button>
+                    </div>      
+                </div>
+            </form>
+        </div>
+
+        <!-- Maps -->
+        <div id="map"></div>
+        
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCZgi02r2AvJ-5IizK_xSNmsyjt61bgs4E&callback=initMap" async defer></script>
+    </body>
+</html>
