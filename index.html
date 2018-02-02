@@ -19,22 +19,58 @@
                 </div>
             </nav>
 
-            <!-- Search-->
-            <form style="padding-top:75px">
-                <div class="form-group row">
-                    <label for="ville" class="col-auto col-form-label">Ville</label>
-                    <div class="col-auto">
-                        <input class="form-control" id="ville" placeholder="Ville...">
-                    </div>
-                    <div class="col-auto">
-                        <button type="submit" class="btn btn-dark">Rechercher</button>
-                    </div>      
+            <div class="row" id="after-navbar">
+                <div class="col">
+                    <!-- Search-->
+                    <form method="post" action="main.php">
+                        <div class="form-group row">
+                            <label for="ville" class="col-auto col-form-label">Ville</label>
+                            <div class="col-auto">
+                                <input class="form-control" id="ville" name="ville" placeholder="Ville...">
+                            </div>
+                            <div class="col-auto">
+                                <button type="submit" class="btn btn-dark">Rechercher</button>
+                            </div>      
+                        </div>
+                    </form>
                 </div>
-            </form>
-        </div>
+                <div class="col">
+                    <!-- Maps -->
+                    <div id="map"></div>
+                </div>
+            </div>
 
-        <!-- Maps -->
-        <div id="map"></div>
+            <div class="row" id="after-map">
+                <div class="card text-center text-white bg-secondary mb-3">
+                    <div class="card-header">
+                        <h4>Bordeaux</h2>
+                        <ul class="nav nav-tabs card-header-tabs">
+                            <li class="nav-item">
+                                <a class="nav-link text-white active" href="#">En ce moment</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-white" href="#">J+1</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-white" href="#">J+2</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-white" href="#">J+3</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-white" href="#">J+4</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-white" href="#">J+5</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="card-body">
+                        <!-- Données météo -->
+                    </div>
+                </div>
+            </div>
+        </div>
         
         <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCZgi02r2AvJ-5IizK_xSNmsyjt61bgs4E&callback=initMap" async defer></script>
     </body>

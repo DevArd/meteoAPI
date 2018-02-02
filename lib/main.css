@@ -3,9 +3,22 @@
 #map {
     height: 100%;
 }
-/* Optional: Makes the sample page fill the window. */
+
 html, body {
     height: 100%;
     margin: 0;
     padding: 0;
+}
+
+#after-navbar {
+    padding-top:75px;
+}
+
+#after-map {
+    padding-top:20px;
+}
+
+form {
+    padding-bottom:75px;
+    padding-top:75px;
 }
