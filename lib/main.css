@@ -10,15 +10,20 @@ html, body {
     padding: 0;
 }
 
-#after-navbar {
+#searchAndMap {
     padding-top:75px;
 }
 
-#after-map {
+#dataMeteo {
     padding-top:20px;
+}
+
+#search {
+    padding-right:50px;
 }
 
 form {
     padding-bottom:75px;
-    padding-top:75px;
+    padding-top:100px;
+    padding-right:50px;
 }
