@@ -1,5 +1,4 @@
 <?php
-
 function getMeteo($ville)
 {
     $curl = curl_init();
